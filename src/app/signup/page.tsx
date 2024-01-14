@@ -14,7 +14,7 @@ const SignUp = () => {
     const password = form.get("password") as string;
     console.log(email, password);
     if (email && password) {
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signUp({
         email,
         password,
       });
