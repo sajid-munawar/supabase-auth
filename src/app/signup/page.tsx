@@ -18,7 +18,7 @@ const SignUp = () => {
         email,
         password,
       });
-      console.log(data);
+      console.log("data", data);
       if (data) {
         setCookie("token", data.session?.access_token!);
         router.replace("/");
