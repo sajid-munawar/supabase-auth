@@ -1,17 +1,12 @@
-// import CountryList from "./components/CountryList";
-// import SignIn from "./components/SignUp";
-
 import Logout from "./components/Logout";
-
-// import SignIn from "./components/SignIn";
+import UploadFile from "./components/UploadFile";
 
 export default function Home() {
   return (
     <main>
-      {/* <CountryList /> */}
       <h1>Dashboard</h1>
       <Logout />
-      {/* <SignIn /> */}
+      <UploadFile />
     </main>
   );
 }
