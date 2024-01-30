@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { supabase } from "@/lib/initSupabase";
 import React, { useState } from "react";
 
@@ -25,7 +26,7 @@ export default function UploadFile() {
       <button onClick={handleGetBucketList}>Get bucket list</button>
       <form onSubmit={handleSubmit}>
         <input type="file" onChange={(e) => setFileToUpload(e)} />
-        <button type="submit">Upload</button>
+        <Button type="submit">Upload</Button>
       </form>
     </div>
   );
